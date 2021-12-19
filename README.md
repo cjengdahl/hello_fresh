@@ -11,7 +11,7 @@ See toast as an example.
 
 ```bash
 
-ENV FLASK_APP=hello_fresh
+export FLASK_APP=hello_fresh
 python3 -m  flask run --host=0.0.0.0 --port=3000
 
 ```
