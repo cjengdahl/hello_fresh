@@ -1,0 +1,55 @@
+.box-caption {
+  position: absolute;
+  max-width: 200px;
+  word-break: break-word;
+  background-color: rgba(0, 0, 0, .6);
+  padding: 10px;
+}
+
+.box-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  padding: .5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  word-break: break-word;
+  color: #d9d9d9;
+}
+
+
+.box-flex-bottom {
+  align-items: flex-end;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center
+}
+
+.column {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+  flex-direction: column;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;;
+}
+
+.column img:hover {
+    opacity: .5;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

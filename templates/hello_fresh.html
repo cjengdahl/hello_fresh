@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet/hello_fresh.css') }}">
+    <title>Hello Fresh</title>
+</head>
+<body>
+        {% for row in recipes %}
+        <div class="row">
+            {% for col in row %}
+            <div class="column">
+                <div class="box-flex box-flex-bottom">
+                    <a href="static/recipes/{{col}}/recipe.pdf">
+                    <img src="static/recipes/{{col}}/photo.jpeg" alt="{{col}}">
+                    </a>
+                    <h5 class="box-caption">{{col | replace("-", " ") | title}}</h5>
+                </div> 
+            </div>
+            {% endfor %}
+         </div>
+        {% endfor %}  
+</body>
+</html>
